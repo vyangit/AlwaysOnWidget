@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_narrow">6dp</dimen>
+    <dimen name="spacing_default">12dp</dimen>
+    <dimen name="spacing_wide">36dp</dimen>
+    <dimen name="spacing_wider">48dp</dimen>
+    <dimen name="developer_settings_instructions_font_size">16sp</dimen>
+
+    <dimen name="round_square_button_corner_radius">4dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+</resources>

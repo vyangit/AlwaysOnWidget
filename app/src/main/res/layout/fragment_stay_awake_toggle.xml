@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fragment_stay_awake_toggle_fab_main_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_always_on_toggle_off_24dp"
+        app:tint="@color/colorDisabled"
+        app:backgroundTint="@color/colorAccent"
+        app:maxImageSize="70dp"
+        app:fabCustomSize="120dp" />
+
+    <TextView
+        android:id="@+id/fragment_stay_awake_toggle_indicator_text"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_wide"
+        android:text="@string/stay_awake_is_disabled"
+        android:layout_gravity="center" />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AlwaysOnWidget</string>
+    <string name="setup_instructions">
+        Wake lock permission not enabled.\n\n To enable wake lock permission
+        on your android device, click "OK" below or follow the following path
+        \"Settings\" >> \"Apps &amp; notifications\" >> \"SEE ALL # APPS\" >> \"AlwaysOnWidget\" >>
+        \"Permissions\" >> \"Wake Lock\" and then toggle on the permission
+    </string>
+    <string name="stay_awake_is_enabled">\"Stay Awake\" is enabled</string>
+    <string name="stay_awake_is_disabled">\"Stay Awake\" is disabled</string>
+    <string name="app_settings">App Settings</string>
+    <string name="ok">OK</string>
+
+    <string name="wake_lock_permission_required">Wake lock permission to toggle screen awake needed.</string>
+    <string name="wake_lock_permission_denied">Wake lock permission to toggle screen awake denied.</string>
+    <string name="wake_lock_permission_granted">Wake lock permission to toggle screen awake granted.</string>
+
+    <string name="appwidget_toggle_button">Stay Awake Toggle</string>
+    <string name="add_widget">Add widget</string>
+</resources>
