@@ -6,6 +6,7 @@
         \"Settings\" >> \"Apps &amp; notifications\" >> \"SEE ALL # APPS\" >> \"AlwaysOnWidget\" >>
         \"Permissions\" >> \"Wake Lock\" and then toggle on the permission
     </string>
+    <string name="termination_instructions">To terminate a stay awake session, turn the device screen off</string>
     <string name="stay_awake_is_enabled">\"Stay Awake\" is enabled</string>
     <string name="stay_awake_is_disabled">\"Stay Awake\" is disabled</string>
     <string name="app_settings">App Settings</string>

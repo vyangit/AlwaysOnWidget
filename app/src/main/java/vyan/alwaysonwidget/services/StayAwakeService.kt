@@ -24,7 +24,8 @@ class StayAwakeService : Service() {
     // Private vars
     private lateinit var wakeLock: PowerManager.WakeLock
     private val binder = StayAwakeBinder()
-    private val receiver = object : BroadcastReceiver() {
+    private val receiver = object :
+        BroadcastReceiver() {
         override fun onReceive(context: Context, intent: Intent) {
             when (intent.action) {
                 ACTION_TOGGLE_STAY_AWAKE -> toggleStayAwake()

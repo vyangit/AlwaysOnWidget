@@ -25,4 +25,13 @@
         android:text="@string/stay_awake_is_disabled"
         android:layout_gravity="center" />
 
+
+    <TextView
+        android:id="@+id/fragment_stay_awake_toggle_termination_instructions_text"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_wide"
+        android:text="@string/termination_instructions"
+        android:layout_gravity="center" />
 </LinearLayout>

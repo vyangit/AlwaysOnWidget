@@ -20,6 +20,7 @@
         <receiver android:name=".widgets.ToggleAwakeAppWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="vyan.alwaysonwidget.widgets.ToggleAwakeAppWidget.ACTION_SELF_STARTER" />
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
