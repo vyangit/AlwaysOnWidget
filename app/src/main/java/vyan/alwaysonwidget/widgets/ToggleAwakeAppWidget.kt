@@ -79,7 +79,7 @@ class ToggleAwakeAppWidget : AppWidgetProvider() {
                     toggleImageSrc = R.drawable.ic_always_on_toggle_on_24dp
                     clickIntent = PendingIntent.getBroadcast(
                         context,
-                        0,
+                        1,
                         Intent(StayAwakeService.ACTION_TOGGLE_STAY_AWAKE),
                         0
                     )
