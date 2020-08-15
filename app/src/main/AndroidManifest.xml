@@ -17,6 +17,16 @@
             android:name=".services.StayAwakeService"
             android:enabled="true" />
 
+        <service
+            android:name=".services.StayAwakeQSTileService"
+            android:label="@string/stay_awake"
+            android:icon="@drawable/ic_always_on_toggle_off_24dp"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
         <receiver android:name=".widgets.ToggleAwakeAppWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
