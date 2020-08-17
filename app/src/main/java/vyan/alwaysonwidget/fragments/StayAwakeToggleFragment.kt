@@ -85,7 +85,7 @@ class StayAwakeToggleFragment : Fragment() {
         requireContext().unregisterReceiver(broadcastReceiver)
 
         // Unbind service
-        requireContext().unbindService(connection)
+        if (isBound) requireContext().unbindService(connection)
         isBound = false
     }
 

@@ -43,7 +43,7 @@ class StayAwakeQSTileService : TileService() {
         IntentFilter().apply {
             addAction(StayAwakeService.ACTION_STAY_AWAKE_STATE_CHANGED)
         }.also { filter ->
-            applicationContext.registerReceiver(updateReceiver, filter)
+            registerReceiver(updateReceiver, filter)
         }
 
         // Set to on or off depending if service is pingable/marshaled
@@ -51,29 +51,29 @@ class StayAwakeQSTileService : TileService() {
         if (!isUp) updateTile(false)
     }
 
-//    override fun onStopListening() {
-//        val context = applicationContext
-//        if (isBound) context.unbindService(connection)
-//        isBound = false
-//        context.unregisterReceiver(updateReceiver)
-//    }
+    override fun onStopListening() {
+        unregisterReceiver(updateReceiver)
+        if (isBound) unbindService(connection)
+        isBound = false
+        updateTile(false)
+    }
 
     override fun onClick() {
         if (!isBound) {
-            startForegroundStayAwakeService(applicationContext)
+            startForegroundStayAwakeService()
         } else {
             stayAwakeService.toggleStayAwake()
         }
     }
 
-    private fun startForegroundStayAwakeService(context: Context) {
-        Intent(context, StayAwakeService::class.java).apply {
+    private fun startForegroundStayAwakeService() {
+        Intent(applicationContext, StayAwakeService::class.java).apply {
             putExtra(StayAwakeService.EXTRA_START_AWAKE_FLAG, true)
         }.also { intent ->
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                context.startForegroundService(intent)
+                startForegroundService(intent)
             } else {
-                context.startService(intent)
+                startService(intent)
             }
         }
     }

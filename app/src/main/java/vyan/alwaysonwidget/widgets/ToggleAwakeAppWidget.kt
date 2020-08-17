@@ -42,7 +42,6 @@ class ToggleAwakeAppWidget : AppWidgetProvider() {
         appWidgetManager: AppWidgetManager,
         appWidgetIds: IntArray
     ) {
-        startForegroundStayAwakeService(context)
         buildRemoteViews(context, appWidgetManager, appWidgetIds)
     }
 
